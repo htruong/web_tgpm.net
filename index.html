@@ -10,18 +10,19 @@ hidetitle : true
 
 <p><strong>Thế Giới Phẳng Monthly</strong> (TGPM) là ấn phẩm tiếng Việt tại Hoa Kỳ với mục đích mang đến cho các độc giả và thính giả các thông tin miễn phí chất lượng cao nhất từ các nguồn khắp nơi vể các chủ đề kinh tế, văn hóa, khoa học, xã hội, công nghệ,... dưới dạng đọc và đối chiếu trực tuyến trên web, hoặc đọc bằng ebook hoặc nghe bằng podcast (trong thời gian tới). TGPM quan tâm đến những chủ đề không chỉ tồn tại ở Việt Nam, mà tồn tại ở khắp mọi nơi trên thế giới của chúng ta, một thế giới ngày càng trở nên phẳng và liên kết hơn từng ngày.</p>
 
-<p>Thế Giới Phẳng không phải là trang tin thời sự hay chính trị.</p>
+<p>TGPM có thể có các bài viết cũ. TGPM không phải và không có ý định trở thành một trang tin thời sự hay chính trị.</p>
 
 <h2>Nội dung nổi bật</h2>
 
-<p>Trong tháng này: <em>Lưu ý: Chỉ nội dung trong số đã phát hành mới có Podcast và ebook. Nội dung trong số cuối tháng có thể thay đổi so với trong tháng.</em></p>
+<p><strong>Trong tháng này</strong>: <em>Lưu ý: Chỉ nội dung trong số đã phát hành mới có Podcast và ebook. Nội dung trong số cuối tháng có thể thay đổi so với trong tháng.</em></p>
 <ul>
 {{ range .site.posts }}
 {{ if .upcoming }}
-<li>{{ .date | date_to_string}}. {{ .author }}. {{ .translator }}. <a href="{{ .url }}">{{ .title }}</a>: {{ .intro }}.</li>
+<li><a href="{{ .url }}">{{ .title }}</a><br /><em>{{ .intro }}</em>. {{ .date | date_to_string}}. {{ .author }}. {{ .translator }}. </li>
 {{ end }}
 {{ end }}
 </ul>
+<!--
 <p>Các số đã phát hành:</p>
 <ul>
 {{ range .site.posts }}
@@ -30,6 +31,7 @@ hidetitle : true
 {{ end }}
 {{ end }}
 </ul>
+-->
 
 <h2>Bản quyền</h2>
 
@@ -37,4 +39,4 @@ hidetitle : true
 
 <p>Nội dung của TGPM có sự đóng góp của các nhà dịch giả, học giả, trí thức và sinh viên khắp mọi nơi. Trừ các ngoại lệ được chú thích, nội dung trên trang web được phát hành dưới giấy phép mở Creative Commons 3.0. Các bài viết gửi đến TGPM mặc định đồng ý việc đưa lại nội dung đóng góp dưới giấy phép CC 3.0.</p>
 
-<p>Nếu Quý vị có đóng góp gì cho chúng tôi, xin gửi email tới zed@tgpm.net. </p>
+<p>Nếu Quý vị có đóng góp cho chúng tôi, xin gửi email tới zed@tgpm.net. </p>

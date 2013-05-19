@@ -2,15 +2,14 @@
 layout : "default"
 title : "Thế giới trong chiếc iPod"
 author : "Andrew Leonard"
-translator : "Zed <zed@tgpm.net>"
+translator : "Zed [zed@tgpm.net]"
 copyrightnotice : "Cover image: iPod Teardown. Photo: iFixit 2009."
 intro : "Bộ vi xử lý điều khiển chiếc máy nghe nhạc nổi tiếng của Apple được chế tạo ở Ấn Độ, Đài Loan, Trung Quốc và Thung lũng Silicon. Có phải đây là một ví dụ của việc toàn cầu hoá làm lợi cho tất cả mọi người -- hay là một dấu hiệu của việc nền kinh tế đang lăn bánh khỏi nước Mỹ?"
 credits : "The world in the iPod. http://dir.salon.com/story/tech/feature/2005/06/03/portalplayer/print.html. Salon.com, chuyên mục Chính trị. 3 Tháng Sáu 2005. Zed dịch. 6/2010."
-hidetitle : true
 upcoming : true
 ---
 
-<div id="page-title" style="margin-top: 0; background: white url(/posts_assets/ifixit_ipod.jpg) center center fixed no-repeat; padding: 125px 0; color: black;"><h1 style="text-shadow: 1px 1px 2px #333;">Thế giới trong chiếc iPod</h1></div>
+<div id="page-title" style="margin-top: 0; background: white url(/posts_assets/ifixit_ipod.jpg) center center fixed no-repeat; padding: 125px 0; color: grey;"><h1 style="text-shadow: 1px 1px 2px #333;">Thế giới trong chiếc iPod</h1></div>
 
 Hãy mở một chiếc iPod ra và bạn nhìn thấy gì? In trong vi mạch bán dẫn là lộ trình cho nền kinh tế của thế giới: toàn cầu hoá, thuê nước ngoài, triển khai ra nước ngoài, gắn kết và phức tạp. Hãy nhìn vào các linh kiện của nó: Chiếc ổ cứng (Năm 2005 iPod vẫn còn dùng ổ cứng -- ND), bảng mạch, chiếc click-wheel, cục pin và tất cả những thứ khác. Chiếc iPod là một điển hình về thành công của Apple, nhưng điều cần lưu ý đầu tiên là Apple không "làm ra" nó. Công ty của Steve Jobs và cộng sự điều hành thiết kế chung, nhưng những linh kiện thì lại được lắp ở Trung Quốc bằng hai doanh nghiệp Đài Loan.
 
