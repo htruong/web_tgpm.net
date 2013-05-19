@@ -50,7 +50,19 @@
 				<div id="content-inner">
 				
 				<h1 id="page-title" style="{{if .page.hidetitle}}display:none;{{end}}">{{ .page.title }}</h1>
-				
+				{{ if .page.author }}
+				<p class="author">Tác giả: {{ .page.author }}</p>
+				{{ end }}
+				{{ if .page.translator }}
+                <p class="translator">Dịch: {{ .page.translator }}</p>
+                {{ end }}
+				{{ if .page.intro }}
+                    <p class="intro">{{ .page.intro }}</p>
+                {{ end }}
+                {{ if .page.credits }}
+                    <p class="credits">{{ .page.credits }}</p>
+                {{ end }}
+                
 				{{ .content }}
 				
 				

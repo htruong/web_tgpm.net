@@ -14,18 +14,27 @@ hidetitle : true
 
 <h2>Nội dung nổi bật</h2>
 
+<p>Trong tháng này: <em>Lưu ý: Chỉ nội dung trong số đã phát hành mới có Podcast và ebook. Nội dung trong số cuối tháng có thể thay đổi so với trong tháng.</em></p>
 <ul>
 {{ range .site.posts }}
-{{ if .featured }}
-<li><a href="{{ .url }}">{{ .title }}</a></li>
+{{ if .upcoming }}
+<li>{{ .date | date_to_string}}. {{ .author }}. {{ .translator }}. <a href="{{ .url }}">{{ .title }}</a>: {{ .intro }}.</li>
+{{ end }}
+{{ end }}
+</ul>
+<p>Các số đã phát hành:</p>
+<ul>
+{{ range .site.posts }}
+{{ if .monthlyarchive }}
+<li><a href="{{ .url }}">{{ .title }}</a>: {{ .intro }}</li>
 {{ end }}
 {{ end }}
 </ul>
 
 <h2>Bản quyền</h2>
 
-<p>Thế Giới Phẳng là một dự án độc lập của một nghiên cứu sinh ngành sinh học và khoa học máy tính người Việt tại Hoa Kỳ.</p>
+<p>Thế Giới Phẳng là một dự án độc lập và các bài viết trên TGPM được chọn lọc bởi Zed - một nghiên cứu sinh ngành Khoa học Máy tính và Sinh học người Việt tại Hoa Kỳ.</p>
 
 <p>Nội dung của TGPM có sự đóng góp của các nhà dịch giả, học giả, trí thức và sinh viên khắp mọi nơi. Trừ các ngoại lệ được chú thích, nội dung trên trang web được phát hành dưới giấy phép mở Creative Commons 3.0. Các bài viết gửi đến TGPM mặc định đồng ý việc đưa lại nội dung đóng góp dưới giấy phép CC 3.0.</p>
 
-<p>Nếu Quý vị có đóng góp gì cho chúng tôi, xin gửi email tới _@tgpm.net. </p>
+<p>Nếu Quý vị có đóng góp gì cho chúng tôi, xin gửi email tới zed@tgpm.net. </p>

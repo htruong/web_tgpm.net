@@ -634,6 +634,10 @@ overflow:visible!important;
 }
 }
 
+.intro {
+    font-weight:bold;
+}
+
 @media only screen and (max-device-width: 800px) {
 h1 { font-size: 1.4em; }
 h2 { font-size: 1.3em; }
