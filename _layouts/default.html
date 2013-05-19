@@ -64,8 +64,8 @@
 
 			<div class="widget-creative-commons widget">
 				<div class="widget-content">
-                    {{ if .customcopyright }}
-                        {{ .copyrightnotice }}<br />
+                    {{ with .page.copyrightnotice }}
+                        {{ .page.copyrightnotice }}<br />
                     {{ end }}
                     Translated works on this website are &copy; respective owners and are licensed under the terms of <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0</a>.<br />
 					Trang web này không theo dõi hoạt động của bạn. <a href="privacy-policy.html">Chính sách về thông tin cá nhân</a>. <a href="privacy-policy-en.html">Privacy Policy in English</a>.
