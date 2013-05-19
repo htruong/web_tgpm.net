@@ -64,7 +64,7 @@
 
 			<div class="widget-creative-commons widget">
 				<div class="widget-content">
-                    {{ if len(.copyrightnotice) > 0 }}
+                    {{ with .copyrightnotice }}
                         {{ .copyrightnotice }}<br />
                     {{ end }}
                     Translated works on this website are &copy; respective owners and are licensed under the terms of <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0</a>.<br />
