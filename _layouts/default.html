@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="Content-type" content="$theme.type; charset=utf-8" />
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<title>{{ .page.title }} &middot; tgpm.net</title>
+
+		<meta name="generator" content="jekyll-baas" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" charset="utf-8"/>
+	</head>
+	<body id="mt-blog" class="mt-page-archive layout-w">
+	<div id="container"><div id="container-inner">
+	<div id="header">
+	<div id="header-inner">
+	<div id="header-content">
+			<div id="header-name"><a href="/" accesskey="1">tgpm.net</a></div>
+			<div id="header-description">Thế Giới Phẳng Magazine - Tạp chí Văn hóa, Khoa học, Xã hội Tiếng Việt</div>
+
+			<!-- start menu -->
+			<div class="widget-pages widget">
+			<div class="widget-content">
+			<div id="menu">
+			<div class="container">
+					<ul>
+					{{ range .site.pages }}
+					{{ if .hide }}
+					{{ else }}
+							<li><a href="/{{ .url }}">{{ .title }}</a></li>
+                    {{ end }}
+					{{ end }}
+					</ul>
+			</div>
+			</div>
+			</div>
+			</div>
+			<!-- end menu -->
+
+	</div>
+	</div>
+	</div>
+
+			<div id="content">
+				<div id="content-inner">
+				
+				<h1 id="page-title" style="{{if .page.hidetitle}}display:none;{{end}}">{{ .page.title }}</h1>
+				
+				{{ .content }}
+				
+				
+				</div>
+			</div>
+
+
+<div id="footer">
+	<div id="footer-inner">
+		<div id="footer-content">
+
+			<div class="widget-creative-commons widget">
+				<div class="widget-content">
+                    Translated works on this website are &copy; 2013 tgpm.net and are licensed under the terms of <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0</a>.<br />
+					Trang web này không theo dõi hoạt động của bạn. <a href="privacy-policy.html">Chính sách về thông tin cá nhân</a>. <a href="privacy-policy-en.html">Privacy Policy in English</a>.
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div></div>
+</body>
+</html>

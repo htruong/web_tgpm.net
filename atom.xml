@@ -1,0 +1,13 @@
+---
+layout : "atom"
+---
+
+	{{ range .site.posts }}
+	<entry>
+		<title>{{ .title }}</title>
+		<link href="http://www.tgpm.net/{{ .url }}" />
+		<updated>{{ .date | date_to_xmlschema }}</updated>
+		<id>http://www.tgpm.net/{{ .url }}</id>
+		<content type="html">{{ .content | html }}</content>
+	</entry>
+	{{ end }}

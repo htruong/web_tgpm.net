@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Huan Truong blog</title>
+	<link href="http://www.tnhh.net/atom.xml" rel="self"/>
+	<link href="http://www.tnhh.net/"/>
+	<id>http://tnhh.net</id>
+	<updated>{{ .site.time | date_to_xmlschema }}</updated>
+	<author>
+		<name>Huan Truong</name>
+	</author>
+	{{ .content }}
+</feed>
